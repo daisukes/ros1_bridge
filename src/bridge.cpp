@@ -101,7 +101,7 @@ create_bidirectional_bridge(
   bool reliable,
   bool latch)
 {
-  RCLCPP_INFO(ros2_node->get_logger(), "create bidirectional bridge for topic " + topic_name);
+  RCLCPP_INFO(ros2_node->get_logger(), "create bidirectional bridge for topic %s", topic_name);
   BridgeHandles handles;
   handles.bridge1to2 = create_bridge_from_1_to_2(
     ros1_node, ros2_node,
